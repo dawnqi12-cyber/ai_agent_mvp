@@ -1,6 +1,5 @@
 # Option Strategy Research Agent
-
-一个用于作品集和面试展示的量化投研 AI Agent MVP 骨架项目。项目目标是展示一个面向期权策略研究的 Agent 如何编排多个研究工具，包括行情数据获取、Black-Scholes 定价、Greeks 计算、策略构建、模拟回测、可视化和报告生成。
+量化投研 AI Agent MVP 骨架项目。项目目标是展示一个面向期权策略研究的 Agent 如何编排多个研究工具，包括行情数据获取、Black-Scholes 定价、Greeks 计算、策略构建、模拟回测、可视化和报告生成。
 
 > 当前阶段只完成项目设计和基础骨架，不实现完整业务功能。
 
@@ -106,10 +105,3 @@ streamlit run app.py
 ```
 
 当前 `app.py` 只是占位入口，完整交互界面将在后续阶段实现。
-
-## 面试展示要点
-
-- 能解释为什么 Agent 适合组织量化投研流程。
-- 能说明数据源失败时如何保持系统可演示。
-- 能把 Black-Scholes、Greeks、策略 payoff、回测结果串成完整研究闭环。
-- 能展示清晰模块边界，而不是把所有逻辑堆在一个 notebook 中。
