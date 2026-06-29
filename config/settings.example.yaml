@@ -1,0 +1,31 @@
+app:
+  name: Option Strategy Research Agent
+  environment: local
+
+data:
+  provider_priority:
+    - yfinance
+    - mock
+  use_mock_fallback: true
+  default_symbol: AAPL
+  default_start_date: "2023-01-01"
+  default_end_date: "2024-01-01"
+
+pricing:
+  model: black_scholes
+  risk_free_rate: 0.04
+  dividend_yield: 0.0
+
+backtest:
+  initial_cash: 100000
+  transaction_cost_bps: 5
+  rebalance_frequency: monthly
+
+agent:
+  workflow:
+    - fetch_data
+    - price_options
+    - calculate_greeks
+    - build_strategy
+    - run_backtest
+    - generate_report
