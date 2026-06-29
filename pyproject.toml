@@ -1,7 +1,7 @@
 [project]
 name = "option-strategy-research-agent"
 version = "0.1.0"
-description = "A Python MVP skeleton for an options strategy research AI Agent."
+description = "A Python MVP for an options strategy research AI Agent with pricing, strategies, simulation, reporting, and Streamlit UI."
 readme = "README.md"
 requires-python = ">=3.10"
 
