@@ -1,8 +1,7 @@
 # Option Strategy Research Agent
 
-一个用于作品集和面试展示的 **期权策略研究 AI Agent MVP**。项目使用 Python 构建，围绕“自然语言研究需求 -> 数据获取 -> 期权定价 -> 策略构建 -> 简化模拟 -> Markdown 研究报告”的流程，展示量化投研场景下 Agent 工具编排的完整闭环。
+一个 **期权策略研究 AI Agent MVP**项目。项目使用 Python 构建，围绕“自然语言研究需求 -> 数据获取 -> 期权定价 -> 策略构建 -> 简化模拟 -> Markdown 研究报告”的流程，展示量化投研场景下 Agent 工具编排的完整闭环。
 
-> 免责声明：本项目仅用于教育、研究和作品集展示，不构成投资、交易、税务或法律建议。期权具有高风险，真实交易前需要独立研究和专业意见。
 
 ## 项目背景
 
@@ -216,26 +215,6 @@ Streamlit 页面展示：
 - Mock data 仅用于演示，不代表真实市场。
 - 真实期权交易具有高风险，可能造成重大损失。
 
-## 面试讲解话术
-
-可以按下面的顺序讲：
-
-1. **项目定位**：这是一个期权策略研究 Agent MVP，不是普通聊天机器人，而是投研工具链的自动编排。
-2. **为什么做 fallback**：面试现场网络不稳定，真实数据源也可能返回空数据，所以我实现了 yfinance + mock fallback，保证演示可靠。
-3. **金融计算可信度**：Black-Scholes、Greeks、IV 反解都由确定性 Python 代码完成，不依赖 LLM 计算。
-4. **Agent 的价值**：Agent 不直接“猜答案”，而是把数据、定价、策略、模拟、报告这些工具按工作流组织起来。
-5. **工程结构**：数据、定价、策略、回测、Agent、UI 分层清晰，方便测试和扩展。
-6. **边界意识**：我明确标注这是 research prototype，不把简化回测包装成真实交易系统。
-7. **可扩展性**：后续可以接真实 broker API、更完整期权回测、LLM 报告润色、多策略比较和组合优化。
-
-## 简历 Bullet Points
-
-- Built a Python-based Options Strategy Research Agent MVP with Streamlit UI, modular pricing, strategy, backtesting, and reporting layers.
-- Implemented Black-Scholes call/put pricing, Greeks, and implied volatility solver with deterministic numerical methods and pytest coverage.
-- Designed a resilient market data layer using `yfinance` with automatic mock data fallback for offline demos.
-- Built explainable option strategy constructors for Covered Call, Protective Put, Bull/Bear Spreads, and Iron Condor with payoff curves and risk descriptions.
-- Developed a rule-based Agent planner that maps natural-language investment intent to strategy workflows and generates Markdown research reports.
-- Added simplified historical strategy simulation with cumulative return, max drawdown, win rate, average return, and equity curve outputs.
 
 ## 当前完成度
 
